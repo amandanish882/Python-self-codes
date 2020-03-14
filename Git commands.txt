@@ -1,0 +1,7 @@
+git clone https://github.com/amandanish882/Python-self-codes.git
+
+
+#go in folder through cd ''
+
+git status
+
