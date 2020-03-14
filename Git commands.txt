@@ -1,3 +1,5 @@
+
+#you clone
 git clone https://github.com/amandanish882/Python-self-codes.git
 
 
@@ -5,3 +7,30 @@ git clone https://github.com/amandanish882/Python-self-codes.git
 
 git status
 
+git add 'Git commands.txt'
+
+
+# -m is for message
+git commit -m "add your comment here"
+
+git push origin  master
+
+
+
+
+#separately, you have to clone no matter
+git init  
+
+git add .
+
+git remote add origin "https://github.com/amandanish882/*any new repository name*"
+
+git push origin master
+
+
+#to add new repository, remove name of old rempository which is "origin"
+git remote rm origin
+
+#then add new repository
+
+git remote add origin "https://github.com/amandanish882/*any new repository name*"
