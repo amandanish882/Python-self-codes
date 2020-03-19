@@ -5,15 +5,17 @@ git clone https://github.com/amandanish882/Python-self-codes.git
 
 #go in folder through cd ''
 
-git status
+1. git status
 
-git add 'Git commands.txt'
-
+2. git add 'Git commands.txt'
+or
+git add .
 
 # -m is for message
-git commit -m "add your comment here"
+3. git commit -m "add your comment here"
 
-git push origin  master
+4.git remote add origin "https://github.com/amandanish882/*any new repository name*"
+5. git push origin  master
 
 
 
