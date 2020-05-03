@@ -28,9 +28,11 @@ git add .
 #separately, you have to clone no matter
 git init  
 
-git add .
-
 git remote add origin "https://github.com/amandanish882/*any new repository name*"
+
+git pull
+
+git add .
 
 git push origin master
 
