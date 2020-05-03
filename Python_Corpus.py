@@ -2958,6 +2958,10 @@ print(election.head())
 
 df.drop(['B', 'C'], axis=1)
 
+#remove a row based on conditions
+
+SNP_data = SNP_data.drop(SNP_data[ SNP_data['Volume'] == 0 ].index, axis=0)
+
 ----------------------------------------------------------------------------------------------
 
 
@@ -4090,6 +4094,9 @@ numbers.index['3']
 #Comprehensive list of indices which matches a value
 [ i for i in range(len(numbers)) if numbers[i] == 1 ]
 
+#or
+#s[s.index.isin([2, 4, 6])]
+'''This is the best'''#SNP_data.columns.get_loc("Close")
 
 #Get the list items based on custom indices
 [numbers[p[i]] for i in range(len(p))]
@@ -4102,5 +4109,81 @@ nums[::-1]
 
 ------------------------------
 
+#Get present working directory 
+
+import os
+os.getcwd()
+
+# Get files in current directory
+
+os.listdir()
 
 
+------------
+
+
+#Merge a data frame
+
+df_outer = pd.merge(df1, df2, on='id', how='outer')
+
+---------
+
+
+#Resample
+
+df.resample('W').mean()
+
+
+------------------
+
+#Get working directory/ #change working directory
+
+os.getcwd()
+os.chdir('../')
+
+
+
+----------------------------
+
+#Shortcut editor in jupyterlab
+
+{
+       "shortcuts": [
+        {
+            "command": "notebook:run-all-above",
+             "keys": [
+             "Ctrl Alt B"
+             ],
+             "selector": ".jp-Notebook:focus",
+             "title": "Run All Above",
+             "category": "Notebook Cell Operations"
+        }
+    ]
+}
+
+
+--------------------------------------
+
+#cbind in python
+
+df3 = pd.concat([df1, df2], axis=1, ignore_index=True)
+
+
+
+----------------------------------------------
+
+
+
+#expand the no. of rows in display
+
+pd.set_option('display.max_columns', 25)
+pd.set_option('display.max_rows', 25)
+pd.set_option('display.min_rows', 25)
+pd.set_option('display.expand_frame_repr', True)
+
+
+---------------------------------
+
+#Most frequently occuring value in dataframe 
+
+df['hour'].mode()

@@ -41,3 +41,21 @@ git remote rm origin
 #then add new repository
 
 git remote add origin "https://github.com/amandanish882/*any new repository name*"
+
+
+
+-----------------------------------------------------------------------
+
+#to add terminal commands to cmd
+
+1) Install Git in your computer - https://git-scm.com/downloads.
+
+2) After installing Git, go to the folder in which Git is installed. Mostly it will be in C drive and then Program Files Folder.
+
+3) In Program Files folder, you will find the folder named Git, find the bin folder which is inside usr folder in the Git folder.
+
+In my case, the location for bin folder was - C:\Program Files\Git\usr\bin
+
+4) Add this location (C:\Program Files\Git\usr\bin) in path variable, in system environment variables.
+
+5) You are done. Restart cmd and try to run ls and other Linux commands.
