@@ -30,7 +30,7 @@ git init
 
 git remote add origin "https://github.com/amandanish882/*any new repository name*"
 
-git pull
+git pull origin master
 
 git add .
 
